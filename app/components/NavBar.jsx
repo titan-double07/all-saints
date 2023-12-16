@@ -12,8 +12,8 @@ export default function NavBar() {
       <div className="flex justify-between items-center border-b-2 border-secondary/60 container py-2 ">
         <div className="logo flex items-end  gap-2 ">
           <Logo className={`w-7`} priority={true} />
-          <p className=" font-black ">A.S.A.C.E</p>
         </div>
+          <p className=" font-black text-center uppercase text-sm ">{`All Saint's Anglican Church`}</p>
         <button
           onClick={() => dispatch(setIsNavOpen(true))}
           className={`text-2xl text-secondary border-2 rounded-lg p-1 border-secondary transition ease-in-out delay-500 duration-300 ${
