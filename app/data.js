@@ -8,7 +8,7 @@ export const navLinks = [
     },
     {
         id: 2,
-        url: "#",
+        url: "/sunday-service",
         text: "sunday service",
         icon: <FaHandsPraying />
 
@@ -35,6 +35,16 @@ export const navLinks = [
     },
 
 ];
+
+export const orderOfServiceData = {
+    title: 'trinity',
+    theme: 'prepare to meet your god',
+    time: '8:00am - 11:00am',
+    type: 'combined service',
+    
+    
+    
+}
 
 export const schemeOfWeek = [
     {

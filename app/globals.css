@@ -2,22 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-light ;
-}
+@layer base {
+  body {
+    @apply bg-light;
+  }
 
-h1{
-  @apply text-[1.75rem];
-}
-h2{
-  @apply text-2xl;
-}
-h3{
-  @apply text-xl;
+  h1 {
+    @apply text-2xl uppercase font-bold;
+  }
+  h2 {
+    @apply text-xl uppercase font-bold;
+  }
+  h3 {
+    @apply text-lg uppercase font-bold;
+  }
+
 }
 
 @layer components {
   .container {
-    @apply mx-auto max-w-7xl px-5 sm:px-6 lg:px-8;
+    @apply mx-auto pb-10 px-5 sm:px-6 lg:px-8;
   }
 }

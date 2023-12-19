@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "./components/NavBar";
 import { ReduxProvider } from "./redux/provider";
 import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 
 const ysabeau = Ysabeau({ subsets: ["latin"] });
 
@@ -17,10 +18,17 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         suppressHydrationWarning
-        className={`${ysabeau.className} relative `}>
+        className={`${ysabeau.className} relative  `}>
         <ReduxProvider>
-          <NavBar />
-          {children}
+          <div className="fixed top-0  z-20 w-full ">
+            <NavBar />
+          </div>
+
+          <div className="mt-[85px] ">
+            {children}
+          </div>
+
+          <Footer />
         </ReduxProvider>
       </body>
     </html>
