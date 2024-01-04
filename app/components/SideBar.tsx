@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
-import { navLinks } from "../data";
+import { navLinks } from "../lib/data";
 import { FaX } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
-import { useAppSelector,useAppDispatch } from "../redux/hooks";
+import { useAppSelector, useAppDispatch } from "../redux/hooks";
 import { setIsNavOpen } from "../redux/features/appSlice";
 
 export default function SideBar() {

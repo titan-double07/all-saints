@@ -4,9 +4,9 @@ import Officials from "./components/Officials";
 
 export default function page() {
   return (
-    <div className="container py-10 flex flex-col gap-4">
+    <div className="container pb-10 pt-5 flex flex-col gap-8 justify-center items-center">
       <section className="section  ">
-        <h1 className="">about us</h1>
+        <h1 className="text-center">about us</h1>
         <div className="content">
           <div className="relative w-[100px] h-[100px] float-left">
             <ImageComponent

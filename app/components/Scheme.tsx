@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Scheme() {
   return (
-    <div className="rounded-lg border-2 border-dark  divide-y divide-dark/70 flex flex-col items-center justify-center px-5 w-[90%] mx-auto">
+    <div className="rounded-lg border-2 border-secondary text-secondary  bg-primary divide-y divide-secondary/70 flex flex-col items-center justify-center px-5 w-full  mx-auto ">
       <section className="flex flex-col gap-1  py-2 w-full">
         <h3 className="day">sunday</h3>
         <div className="programs flex flex-col gap-1 w-full ">

@@ -20,7 +20,7 @@ const readMore = cards[cardId].readMore;
       <div className="w-full h-[190px] relative">
         <ImageComponent
           src={"/images/3838191.jpg"}
-          className={` rounded-t-md `}
+          className={` rounded-t-md  bg-top`}
         />
       </div>
       <div className="card-body flex flex-col bg-primary text-light p-2 gap-1">

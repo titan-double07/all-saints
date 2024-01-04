@@ -1,4 +1,4 @@
-import { orderOfServiceData } from "@/app/data";
+import { orderOfServiceData } from "@/app/lib/data";
 import React from "react";
 import OrderOfService from "./components/OrderOfService";
 import Announcements from "./components/Announcements";
@@ -10,9 +10,15 @@ export default function page() {
   //   console.log(order)
   return (
     <div>
-      <div className="container py-10 flex flex-col gap-10 items-center justify-center ">
-        <OrderOfService />
-        <Announcements />
+      <div className="container pb-10 pt-5 flex flex-col gap-8 items-center justify-center ">
+        <section className="section">
+          <OrderOfService />
+        </section>
+        <section className="section">
+          <h1>announcements</h1>
+          <Announcements />
+        </section>
+
         <section className="section">
           <h1>next sunday summary</h1>
           <SummaryCard cardId={"sunday service"} />

@@ -8,13 +8,13 @@
   }
 
   h1 {
-    @apply text-2xl uppercase font-bold;
+    @apply text-2xl uppercase font-bold tracking-wide;
   }
   h2 {
-    @apply text-xl uppercase font-bold;
+    @apply text-xl uppercase font-bold tracking-wide;
   }
   h3 {
-    @apply text-lg uppercase font-bold;
+    @apply text-lg uppercase font-bold tracking-wide;
   }
 
 }
@@ -24,6 +24,6 @@
     @apply mx-auto pb-10 px-5 sm:px-6 lg:px-8;
   }
   .section{
-    @apply flex flex-col gap-4
+    @apply flex flex-col gap-4 max-w-xl w-full 
   }
 }

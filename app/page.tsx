@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="container flex flex-col pt-10 gap-12">
-        <section className="scheme-week section text-center ">
+      <div className="container flex flex-col pb-10 pt-5 items-center justify-center  gap-8">
+        <section className="scheme-week section text-center  ">
           <h1 className="font-bold uppercase text">scheme for the week</h1>
           <Scheme />
         </section>
@@ -18,11 +18,11 @@ export default function Home() {
         </section>
         <section className="section">
           <h1>sunday service</h1>
-        <SummaryCard cardId={"sunday service"} />
+          <SummaryCard cardId={"sunday service"} />
         </section>
         <section className="section">
           <h1>bible study</h1>
-        <SummaryCard cardId={"bible study"} />
+          <SummaryCard cardId={"bible study"} />
         </section>
       </div>
     </>

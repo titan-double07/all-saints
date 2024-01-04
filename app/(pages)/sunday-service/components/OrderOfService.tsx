@@ -1,20 +1,22 @@
-import React from 'react'
-import { orderOfServiceData } from "@/app/data";
+import React from "react";
+import { orderOfServiceData } from "@/app/lib/data";
 
 export default function OrderOfService() {
-      const { title, theme, time, type, preacher, intercession, order } =
+  const { title, theme, time, type, preacher, intercession, order } =
     orderOfServiceData;
   return (
-    <section className="section">
-      <header className="text-center font-semibold ">
+    <>
+      <header className="text-center font-semibold  flex flex-col gap-5">
         <h1 className="text-center">{title}</h1>
-        <div className="flex items-center justify-between">
-          <p>{type}</p>
-          <p>time:&nbsp;{time}</p>
-        </div>
-        <div className="flex items-center justify-between">
-          <p>preacher:&nbsp;{preacher}</p>
-          <p>intercession:&nbsp;{intercession}</p>
+        <div className="flex  justify-between ">
+          <div className="flex flex-col item-center justify-center gap-2 ">
+            <p>Time:&nbsp;{time}</p>
+            <p>{type}</p>
+          </div>
+          <div className="flex flex-col item-center justify-center gap-2 ">
+            <p>Preacher:&nbsp;{preacher}</p>
+            <p>Intercession:&nbsp;{intercession}</p>
+          </div>
         </div>
       </header>
 
@@ -66,6 +68,6 @@ export default function OrderOfService() {
           );
         })}
       </ul>
-    </section>
+    </>
   );
 }
