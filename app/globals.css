@@ -23,4 +23,7 @@
   .container {
     @apply mx-auto pb-10 px-5 sm:px-6 lg:px-8;
   }
+  .section{
+    @apply flex flex-col gap-4
+  }
 }

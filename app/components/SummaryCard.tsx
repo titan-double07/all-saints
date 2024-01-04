@@ -4,7 +4,7 @@ import ImageComponent from "../lib/imageComponent";
 import { setReadMore } from "../redux/features/appSlice";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
 
-export default function SummaryCard({cardId}) {
+export default function SummaryCard({cardId}: {cardId: string}) {
   const { cards } = useAppSelector((state) => state.appReducer);
   const dispatch = useAppDispatch();
 const readMore = cards[cardId].readMore;
@@ -13,14 +13,16 @@ const readMore = cards[cardId].readMore;
   }, [readMore]);
   return (
     <div className="summary-card border-2 border-primary rounded-lg flex flex-col justify-center relative ">
-      <div className="flex items-center gap-5  absolute top-0 right-0 bg-primary text-light rounded-bl p-1 font-semibold">
+      <div className="flex items-center gap-5  absolute top-0 right-0 bg-primary text-light rounded-bl p-1 font-semibold z-10">
         <p className="date  bg-primary text-light">05/11/2022</p>
         <p className="time  bg-primary text-light">8:00 AM</p>
       </div>
-      <ImageComponent
-        src={"/images/3838191.jpg"}
-        className={`w-full h-[190px] object-cover rounded-t-lg `}
-      />
+      <div className="w-full h-[190px] relative">
+        <ImageComponent
+          src={"/images/3838191.jpg"}
+          className={` rounded-t-md `}
+        />
+      </div>
       <div className="card-body flex flex-col bg-primary text-light p-2 gap-1">
         <h2>prophetic sunday and anointing service</h2>
         <div className="flex items-center gap-2 text-lg capitalize">

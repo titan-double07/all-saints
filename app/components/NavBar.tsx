@@ -1,5 +1,5 @@
-'use client'
-import Logo from "./Logo";
+"use client";
+import Logo from "../lib/Logo";
 import { FaBars } from "react-icons/fa6";
 import SideBar from "./SideBar";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
@@ -13,7 +13,7 @@ export default function NavBar() {
         <div className="logo flex items-end  gap-2 ">
           <Logo className={`w-7`} priority={true} />
         </div>
-          <p className=" font-black text-center uppercase text-sm ">{`All Saint's Anglican Church`}</p>
+        <p className=" font-black text-center uppercase text-sm ">{`All Saint's Anglican Church`}</p>
         <button
           onClick={() => dispatch(setIsNavOpen(true))}
           className={`text-2xl text-secondary border-2 rounded-lg p-1 border-secondary transition ease-in-out delay-500 duration-300 ${

@@ -18,13 +18,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         suppressHydrationWarning
-        className={`${ysabeau.className} relative  `}>
+        className={`${ysabeau.className} relative text-dark `}>
         <ReduxProvider>
           <div className="fixed top-0  z-20 w-full ">
             <NavBar />
           </div>
 
-          <div className="mt-[85px] ">
+          <div className="mt-[85px]  ">
             {children}
           </div>
 

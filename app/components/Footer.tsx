@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "./Logo";
+import Logo from "../lib/Logo";
 import { FaEnvelope, FaPhone } from "react-icons/fa6";
 
 export default function Footer() {
@@ -14,12 +14,12 @@ export default function Footer() {
         </p>
       </div>
       <div className="phone-no flex items-center gap-1">
-              <p className="text-center text-sm">+91 9999999999</p>
-              <FaPhone/>
+        <p className="text-center text-sm">+91 9999999999</p>
+        <FaPhone />
       </div>
       <div className="email flex items-center gap-1">
         <p className="text-center text-sm">asaceikorodu@gmail.com</p>
-        <FaEnvelope/>
+        <FaEnvelope />
       </div>
     </div>
   );

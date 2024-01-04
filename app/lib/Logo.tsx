@@ -1,7 +1,12 @@
 import Image from "next/image";
+import { HTMLAttributes, ReactElement, ReactHTMLElement } from "react";
 import { twMerge } from "tailwind-merge";
 
-export default function Logo({ className, ...props }) {
+type LogoProps = HTMLAttributes<HTMLImageElement> & {
+  className?: string;
+  priority?: boolean;
+};
+export default function Logo({ className, ...props }:LogoProps) {
   return (
     <Image
       src="/images/logo.png"
