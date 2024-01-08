@@ -1,13 +1,13 @@
-import ImageComponent from "@/app/lib/imageComponent";
+import ImageComponent from "@/app/lib/components/imageComponent";
 import React from "react";
 import Officials from "./components/Officials";
 
 export default function page() {
   return (
-    <div className="container pb-10 pt-5 flex flex-col gap-8 justify-center items-center">
+    <div className="container flex flex-col gap-8 justify-center items-center">
       <section className="section  ">
         <h1 className="text-center">about us</h1>
-        <div className="content">
+        <div className="content ">
           <div className="relative w-[100px] h-[100px] float-left">
             <ImageComponent
               src="/images/logo.png"

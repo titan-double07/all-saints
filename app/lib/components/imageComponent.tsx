@@ -5,12 +5,14 @@ import { twMerge } from "tailwind-merge";
 type ImageComponentProps =HTMLAttributes<HTMLImageElement> & {
   alt?: string;
   src: string;
+  quality?: number
 };
 
 export default function ImageComponent({
   className,
   alt,
   src,
+  quality,
   ...props
 }: ImageComponentProps): ReactElement {
     return (

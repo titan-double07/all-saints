@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-light;
+    @apply bg-light text-[1.0625rem];
   }
 
   h1 {
@@ -21,9 +21,17 @@
 
 @layer components {
   .container {
-    @apply mx-auto pb-10 px-5 sm:px-6 lg:px-8;
+    @apply mx-auto pb-10 pt-5 px-5 sm:px-6 lg:px-8;
   }
   .section{
     @apply flex flex-col gap-4 max-w-xl w-full 
   }
+  .quote::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: -1rem;
+  font-size: 4rem;
+  color: gray;
+}
 }

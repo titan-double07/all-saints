@@ -5,7 +5,7 @@ import {
   FaHouseChimney,
   FaHouseUser,
 } from "react-icons/fa6";
-import { NavLink, OrderOfServiceData } from "../types/types";
+import { BankAccount, NavLink, OrderOfServiceData } from "../types/types";
 export const navLinks: NavLink[] = [
   {
     id: 1,
@@ -27,7 +27,7 @@ export const navLinks: NavLink[] = [
   },
   {
     id: 4,
-    url: "#",
+    url: "/give",
     text: "give",
     icon: <FaHandHoldingDollar />,
   },
@@ -198,4 +198,31 @@ export const schemeOfWeek = [
       },
     ],
   },
+];
+
+export const bankAccounts: BankAccount[] = [
+  {
+    imgUrl: "/images/first-bank-nigeria-logo.svg",
+    bankName: "first bank",
+    AccNo: 2034175079,
+    AccName: "All Saints Anglican Church Ebute",
+    type:"savings",
+
+  },
+  {
+    imgUrl: "/images/first-bank-nigeria-logo.svg",
+    bankName: "first bank",
+    AccNo: 3137646057,
+    AccName: "All Saints Anglican Church Ebute",
+    type:"savings",
+    purpose:"welfare"
+
+  },
+  {
+    imgUrl: "/images/zenith-bank-logo.svg",
+    bankName: "zenith bank",
+    AccNo: 1010872816,
+    AccName: "All Saints Anglican Church Ebute",
+    type:"savings",
+  }
 ];

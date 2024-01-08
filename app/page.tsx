@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="container flex flex-col pb-10 pt-5 items-center justify-center  gap-8">
+      <div className="container flex flex-col  items-center justify-center  gap-8">
         <section className="scheme-week section text-center  ">
           <h1 className="font-bold uppercase text">scheme for the week</h1>
           <Scheme />

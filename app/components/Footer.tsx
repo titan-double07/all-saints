@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../lib/Logo";
+import Logo from "../lib/components/Logo";
 import { FaEnvelope, FaPhone } from "react-icons/fa6";
 
 export default function Footer() {

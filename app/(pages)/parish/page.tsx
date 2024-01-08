@@ -4,7 +4,7 @@ import BirthdayList from "./components/BirthdayList";
 
 export default function page() {
   return (
-    <div className="container pb-10 pt-5 flex flex-col gap-8 justify-center items-center">
+    <div className="container  flex flex-col gap-8 justify-center items-center">
       <section className="section  ">
         <h1>programs</h1>
         <div className="overflow-x-auto">

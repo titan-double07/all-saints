@@ -41,3 +41,14 @@ export type SchemeOfTheWeek= {
     }[];
 
 }
+
+//bank accounts
+export type BankAccount = {
+  imgUrl: string,
+  bankName: string,
+  AccNo: number,
+  AccName: string,
+  type:string,
+  purpose?:string,
+  
+}

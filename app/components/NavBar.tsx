@@ -1,5 +1,5 @@
 "use client";
-import Logo from "../lib/Logo";
+import Logo from "../lib/components/Logo";
 import { FaBars } from "react-icons/fa6";
 import SideBar from "./SideBar";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";

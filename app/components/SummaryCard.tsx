@@ -1,13 +1,13 @@
 "use client";
 import { useEffect } from "react";
-import ImageComponent from "../lib/imageComponent";
+import ImageComponent from "../lib/components/imageComponent";
 import { setReadMore } from "../redux/features/appSlice";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
 
-export default function SummaryCard({cardId}: {cardId: string}) {
+export default function SummaryCard({ cardId }: { cardId: string }) {
   const { cards } = useAppSelector((state) => state.appReducer);
   const dispatch = useAppDispatch();
-const readMore = cards[cardId].readMore;
+  const readMore = cards[cardId].readMore;
   useEffect(() => {
     console.log(readMore);
   }, [readMore]);

@@ -10,7 +10,7 @@ export default function page() {
   //   console.log(order)
   return (
     <div>
-      <div className="container pb-10 pt-5 flex flex-col gap-8 items-center justify-center ">
+      <div className="container  flex flex-col gap-8 items-center justify-center ">
         <section className="section">
           <OrderOfService />
         </section>

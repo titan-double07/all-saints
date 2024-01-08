@@ -1,4 +1,4 @@
-import ImageComponent from "@/app/lib/imageComponent";
+import ImageComponent from "@/app/lib/components/imageComponent";
 import React from "react";
 
 export default function Programs() {
