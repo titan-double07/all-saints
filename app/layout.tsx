@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import { ReduxProvider } from "./redux/provider";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
+import SplashScreen from "./components/SplashScreen";
 
 const ysabeau = Ysabeau({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
@@ -18,19 +19,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        suppressHydrationWarning
-        className={`${ysabeau.className} relative text-dark flex flex-col justify-between h-screen `}>
+      <body suppressHydrationWarning className={`${ysabeau.className} `}>
         <ReduxProvider>
-          <div className="fixed top-0 z-20 w-full ">
-            <NavBar />
-          </div>
+          <SplashScreen>
+            <div className="relative text-dark flex flex-col justify-between h-screen">
+              <div className="fixed top-0 z-20 w-full ">
+                <NavBar />
+              </div>
 
-          <div className="mt-[85px] ">
-            {children}
-          </div>
+              <div className="mt-[85px] ">{children}</div>
 
-          <Footer />
+              <Footer />
+            </div>
+          </SplashScreen>
         </ReduxProvider>
       </body>
     </html>

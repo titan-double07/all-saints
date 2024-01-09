@@ -2,6 +2,7 @@ import Image from "next/image";
 import Hero from "./components/Hero";
 import SummaryCard from "./components/SummaryCard";
 import Scheme from "./components/Scheme";
+import SplashScreen from "./components/SplashScreen";
 
 export default function Home() {
   return (

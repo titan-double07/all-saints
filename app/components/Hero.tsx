@@ -25,7 +25,7 @@ export default function Hero() {
               bg-primary hover:bg-secondary hover:text-primary text-secondary text-center text-2xl font-semibold mt-3 shadow-lg shadow-primary/50 active:bg-primary/70 active:text-secondary hover:border-2 hover:border-primary ">
           GIVE
         </Link>
-        <div className="hands-img w-[300px] h-[280px] absolute -bottom-24 mx-auto rotate-2">
+        <div className="hands-img w-[300px] h-[280px] absolute -bottom-24 mx-auto rotate-2 pointer-events-none">
           <ImageComponent
             src={"/images/two-hand-svg.svg"}
             alt="hands"
